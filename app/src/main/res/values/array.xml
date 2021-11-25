@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jurusan">
+        <item>Teknik Komputer</item>
+        <item>Teknik Sipil</item>
+        <item>Teknik Mesin</item>
+        <item>Administrasi Bisnis</item>
+    </string-array>
+</resources>
