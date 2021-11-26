@@ -148,7 +148,7 @@ public class TambahActivity extends AppCompatActivity {
       public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
         int kode = response.body().getKode();
         String message = response.body().getMessage();
-        Toast.makeText(TambahActivity.this, "Kode : "+kode+" | Pesan : "+message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(TambahActivity.this, message, Toast.LENGTH_SHORT).show();
         finish();
       }
       @Override

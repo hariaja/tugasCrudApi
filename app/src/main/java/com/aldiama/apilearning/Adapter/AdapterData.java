@@ -126,7 +126,7 @@ public class AdapterData extends RecyclerView.Adapter<AdapterData.HolderData>{
         public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
           int kode = response.body().getKode();
           String message = response.body().getMessage();
-          Toast.makeText(mContext, "Kode : "+kode+" | Pesan :"+message, Toast.LENGTH_SHORT).show();
+          Toast.makeText(mContext, message, Toast.LENGTH_SHORT).show();
         }
         @Override
         public void onFailure(Call<ResponseModel> call, Throwable t) {

@@ -155,7 +155,7 @@ public class UbahActivity extends AppCompatActivity {
       public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
         int kode = response.body().getKode();
         String message = response.body().getMessage();
-        Toast.makeText(UbahActivity.this, "Kode : "+kode+" | Pesan : "+message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(UbahActivity.this, message, Toast.LENGTH_SHORT).show();
         finish();
       }
       @Override
